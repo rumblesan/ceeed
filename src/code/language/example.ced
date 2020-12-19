@@ -1,0 +1,4 @@
+
+time -> notes([1 213 1 ]) -> slides([1  1 ]) >> pat
+
+pat -> voice1() >> out

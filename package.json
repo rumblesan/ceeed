@@ -1,0 +1,56 @@
+{
+  "name": "ceed",
+  "version": "1.0.0",
+  "description": "Making acid noises in the browser.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:app && npm run build:site",
+    "start": "npm run start:app",
+    "build:app": "webpack --mode production",
+    "build:site": "npx @11ty/eleventy",
+    "start:app": "webpack-dev-server --mode development",
+    "start:site": "npx @11ty/eleventy --serve --port 8081",
+    "test": "jest test"
+  },
+  "bugs": {
+    "url": "https://github.com/rumblesan/ceed/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rumblesan/ceed"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.12.6",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "babel-loader": "^8.1.0",
+    "concurrently": "^5.2.0",
+    "css-loader": "^3.6.0",
+    "dentist": "^1.0.3",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "file-loader": "^6.0.0",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
+    "jest": "^26.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.9",
+    "sass-loader": "^9.0.1",
+    "source-map-loader": "^1.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
+  },
+  "dependencies": {
+    "@rumblesan/virgil": "0.0.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
